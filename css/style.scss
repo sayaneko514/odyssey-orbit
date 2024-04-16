@@ -1,6 +1,6 @@
 $black: #000000;
 $white: #ffffff;
-$primary1: #ff2953;
+$primary1: #22c55e;
 
 @mixin main-font {
   font-family: 'Poppins', sans-serif;
@@ -13,8 +13,8 @@ $primary1: #ff2953;
 
 body {
   @include main-font;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .layout_padding {
@@ -144,17 +144,6 @@ a:focus {
   }
 }
 
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
-
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -178,11 +167,6 @@ a:focus {
 
 .custom_nav-container .navbar-toggler {
   outline: none;
-}
-
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
-  background-size: 55px;
 }
 
 /*end header section*/
