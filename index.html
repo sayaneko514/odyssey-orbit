@@ -25,46 +25,43 @@
 </head>
 
 <body>
-  <div class="header">
-    <!-- header section strats -->
-    <!-- Your browser does not support the video tag -->
-    </img>
+  <div class="wraper">
     <header class="header_section">
       <div class="container-fluid">
         <div class="logo-box">
-          <div class="logo"><a href="index.html"><img src="./assets/logo.png" alt="" title=""></a></div>
-        </div>
-      </div>
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="travel_recommendation.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#us"> About us </a>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact"> Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <div class="search-container" style="margin-top: 3px; margin-left:30px">
-                  <form action="#">
-                    <input type="text" placeholder="Enter a destination or keyword" style="font-style: italic;"
-                      name="search">
-                    <button type="submit"><img src="./assets/icons8-search-16.png"></button>
-                  </form>
-                </div>
-              </li>
-            </ul>
+          <div class="logo"><a href="./index.html"><img src="./assets/logo.png" alt="" title=""></a>
           </div>
         </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="./index.html">Home</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="./about.html"> About us </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html"> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <div class="search-container" style="margin-top: 3px; margin-left:30px">
+                    <form action="#">
+                      <input type="text" placeholder="Enter a destination or keyword" style="font-style: italic;"
+                        name="search">
+                      <button class="bg-success" type="submit"><img src="./assets/icons8-search-16.png"></button>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- end header section -->
 
@@ -78,10 +75,10 @@
                 <div class="col-lg-10 col-md-11 mx-auto">
                   <div class="detail-box">
                     <div>
+                      <h2>Odyssey ORBIT</h2>
                       <h1>
-                        Odyssey ORBIT
+                        Crafting Journeys, Orbiting Dreams.
                       </h1>
-                      <h2>Crafting Journeys, Orbiting Dreams.</h2>
                       <p>
                         We are making unique travel experiences that bring your dream destinations within reach and send
                         you
@@ -101,10 +98,10 @@
                 <div class="col-lg-10 col-md-11 mx-auto">
                   <div class="detail-box">
                     <div>
-                      <h1>
+                      <h2>
                         Odyssey ORBIT
-                      </h1>
-                      <h2>Beyond Borders, Within Reach.</h2>
+                      </h2>
+                      <h1>Beyond Borders, Within Reach.</h1>
                       <p>
                         We are dedicated to transcending the limitations of traditional travel, making even the
                         most distant of destinations accessible.
@@ -125,6 +122,46 @@
     </section>
     <!-- end slider section -->
   </div>
+
+  <footer class="footer-section" id="footer">
+    <div class="container py-4">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="logo-box">
+            <div class="logo"><a href="./index.html"><img src="./assets/logo_large.png" alt="" title=""></a></div>
+          </div>
+          <p class="small text-white mb-0">&copy; Copyrights. All rights reserved.</p>
+        </div>
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h5>Follow Us On</h5>
+          <ul class="list-unstyled">
+            <li><a href="#"><img src="./assets/icons8-facebook-20.png"> Facebook</a></li>
+            <li><a href="#"><img src="./assets/icons8-instagram-20.png"> Instagram</a></li>
+            <li><a href="#"><img src="./assets/icons8-twitterx-20.png"> X</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-white mb-3">Newsletter</h5>
+          <p class="small text-white font-italic">Sign up to receive our latest news and updates.</p>
+          <form action="#">
+            <div class="input-group mb-3">
+              <input class="form-control" type="text" placeholder="email@example.com" aria-label="Email"
+                aria-describedby="button-addon2">
+              <button class="btn text-white bg-success" id="button-addon2" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Js Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
