@@ -18,7 +18,7 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="icon" href="assets/icons/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css">
@@ -29,7 +29,7 @@
         <header class="header_section">
             <div class="container-fluid">
                 <div class="logo-box">
-                    <div class="logo"><a href="./index.html"><img src="./assets/logo.png" alt="" title=""></a>
+                    <div class="logo"><a href="./index.html"><img src="./assets/icons/logo.png" alt="logo"></a>
                     </div>
                 </div>
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -42,20 +42,21 @@
                         <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Home</a>
+                                    <a class="nav-link" href="./index.html">Home</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="./about.html"> About us</a>
+                                    <a class="nav-link" href="./about.html"> About us </a>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./contact.html"> Contact Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <div class="search-container" style="margin-top: 3px; margin-left:30px">
-                                        <form action="#">
+                                        <form id="searchForm">
                                             <input type="text" placeholder="Enter a destination or keyword"
-                                                style="font-style: italic;" name="search">
-                                            <button class="bg-success" type="submit"><img
-                                                    src="./assets/icons8-search-16.png"></button>
+                                                style="font-style: italic;" name="search" id="searchInput">
+                                            <button class="bg-success" type="submit" id="searchButton">
+                                                <img src="./assets/icons/icons8-search-16.png">
+                                            </button>
                                         </form>
                                     </div>
                                 </li>
@@ -75,7 +76,7 @@
                     </h2>
                 </div>
                 <h1>
-                    CRAFTING JOURNEYS, ORBITING DREAMS.
+                    CRAFTING JOURNEYS, ORBITING <span class="highlight">DREAMS.</span>
                 </h1>
                 <p>At OdysseyOrbit, our mission is to make the furthest corners of the world accessible, offering
                     personalized travel experiences that transcend the typical. We believe in a seamless blend of
@@ -87,7 +88,7 @@
                     <div class="staff-block col-lg-4 col-md-6 mx-auto">
                         <div class="inner-box">
                             <div class="image">
-                                <img src="./assets/staff1.png" alt="" />
+                                <img src="./assets/images/staff1.png" alt="" />
                                 <div class="overlay-box">
                                     <div class="content">
                                         <h6>John Doe</h6>
@@ -95,24 +96,26 @@
                                         <ul class="social-list">
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-facebook-20.png" class="original"
+                                                    <img src="./assets/icons/icons8-facebook-20.png" class="original"
                                                         alt="facebook">
-                                                    <img src="./assets/icons8-facebook-20-h.png" class="hover"
+                                                    <img src="./assets/icons/icons8-facebook-20-h.png" class="hover"
                                                         alt="facebook">
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-linkedin-20.png" class="original"
+                                                    <img src="./assets/icons/icons8-linkedin-20.png" class="original"
                                                         alt="linkedin">
-                                                    <img src="./assets/icons8-linkedin-20-h.png" class="hover"
+                                                    <img src="./assets/icons/icons8-linkedin-20-h.png" class="hover"
                                                         alt="linkedin">
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-twitterx-20.png" class="original" alt="X">
-                                                    <img src="./assets/icons8-twitterx-20-h.png" class="hover" alt="X">
+                                                    <img src="./assets/icons/icons8-twitterx-20.png" class="original"
+                                                        alt="X">
+                                                    <img src="./assets/icons/icons8-twitterx-20-h.png" class="hover"
+                                                        alt="X">
                                                 </a>
                                             </li>
                                         </ul>
@@ -126,7 +129,7 @@
                     <div class="staff-block col-lg-4 col-md-6 mx-auto">
                         <div class="inner-box">
                             <div class="image">
-                                <img src="./assets/staff2.png" alt="" />
+                                <img src="./assets/images/staff2.png" alt="" />
                                 <div class="overlay-box">
                                     <div class="content">
                                         <h6>John Doe</h6>
@@ -134,24 +137,26 @@
                                         <ul class="social-list">
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-facebook-20.png" class="original"
+                                                    <img src="./assets/icons/icons8-facebook-20.png" class="original"
                                                         alt="facebook">
-                                                    <img src="./assets/icons8-facebook-20-h.png" class="hover"
+                                                    <img src="./assets/icons/icons8-facebook-20-h.png" class="hover"
                                                         alt="facebook">
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-linkedin-20.png" class="original"
+                                                    <img src="./assets/icons/icons8-linkedin-20.png" class="original"
                                                         alt="linkedin">
-                                                    <img src="./assets/icons8-linkedin-20-h.png" class="hover"
+                                                    <img src="./assets/icons/icons8-linkedin-20-h.png" class="hover"
                                                         alt="linkedin">
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-twitterx-20.png" class="original" alt="X">
-                                                    <img src="./assets/icons8-twitterx-20-h.png" class="hover" alt="X">
+                                                    <img src="./assets/icons/icons8-twitterx-20.png" class="original"
+                                                        alt="X">
+                                                    <img src="./assets/icons/icons8-twitterx-20-h.png" class="hover"
+                                                        alt="X">
                                                 </a>
                                             </li>
                                         </ul>
@@ -165,7 +170,7 @@
                     <div class="staff-block col-lg-4 col-md-6 mx-auto">
                         <div class="inner-box">
                             <div class="image">
-                                <img src="./assets/staff3.png" alt="" />
+                                <img src="./assets/images/staff3.png" alt="" />
                                 <div class="overlay-box">
                                     <div class="content">
                                         <h6>Jane Doe</h6>
@@ -173,24 +178,26 @@
                                         <ul class="social-list">
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-facebook-20.png" class="original"
+                                                    <img src="./assets/icons/icons8-facebook-20.png" class="original"
                                                         alt="facebook">
-                                                    <img src="./assets/icons8-facebook-20-h.png" class="hover"
+                                                    <img src="./assets/icons/icons8-facebook-20-h.png" class="hover"
                                                         alt="facebook">
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-linkedin-20.png" class="original"
+                                                    <img src="./assets/icons/icons8-linkedin-20.png" class="original"
                                                         alt="linkedin">
-                                                    <img src="./assets/icons8-linkedin-20-h.png" class="hover"
+                                                    <img src="./assets/icons/icons8-linkedin-20-h.png" class="hover"
                                                         alt="linkedin">
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="social-icon">
-                                                    <img src="./assets/icons8-twitterx-20.png" class="original" alt="X">
-                                                    <img src="./assets/icons8-twitterx-20-h.png" class="hover" alt="X">
+                                                    <img src="./assets/icons/icons8-twitterx-20.png" class="original"
+                                                        alt="X">
+                                                    <img src="./assets/icons/icons8-twitterx-20-h.png" class="hover"
+                                                        alt="X">
                                                 </a>
                                             </li>
                                         </ul>
@@ -204,6 +211,14 @@
         </section>
         <!-- end trainer section -->
 
+        <!-- Modal Structure -->
+        <div id="searchModal" class="search-modal">
+            <div class="search-modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="searchResults" class="results"></div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer-section" id="footer">
@@ -211,8 +226,8 @@
             <div class="row gy-4 gx-5">
                 <div class="col-lg-4 col-md-6">
                     <div class="logo-box">
-                        <div class="logo"><a href="./index.html"><img src="./assets/logo_large.png" alt="" title=""></a>
-                        </div>
+                        <div class="logo"><a href="./index.html"><img src="./assets/icons/logo_large.png" alt=""
+                                    title=""></a></div>
                     </div>
                     <p class="small text-white mb-0">&copy; Copyrights. All rights reserved.</p>
                 </div>
@@ -227,9 +242,9 @@
                 <div class="col-lg-2 col-md-6 footer-links">
                     <h5>Follow Us On</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#"><img src="./assets/icons8-facebook-20.png"> Facebook</a></li>
-                        <li><a href="#"><img src="./assets/icons8-instagram-20.png"> Instagram</a></li>
-                        <li><a href="#"><img src="./assets/icons8-twitterx-20.png"> X</a></li>
+                        <li><a href="#"><img src="./assets/icons/icons8-facebook-20.png"> Facebook</a></li>
+                        <li><a href="#"><img src="./assets/icons/icons8-instagram-20.png"> Instagram</a></li>
+                        <li><a href="#"><img src="./assets/icons/icons8-twitterx-20.png"> X</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -254,8 +269,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
     <script src="js/stickyMenu.js"></script>
-    <script src="js/textScrollingAnimation.js"></script>
-    <script src="js/sectionActive.js"></script>
+    <script src="js/queryFetch.js"></script>
 
 </body>
 

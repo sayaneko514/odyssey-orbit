@@ -18,7 +18,7 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="icon" href="assets/icons/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css">
@@ -29,7 +29,7 @@
         <header class="header_section">
             <div class="container-fluid">
                 <div class="logo-box">
-                    <div class="logo"><a href="./index.html"><img src="./assets/logo.png" alt="" title=""></a>
+                    <div class="logo"><a href="./index.html"><img src="./assets/icons/logo.png" alt="" title=""></a>
                     </div>
                 </div>
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -42,20 +42,21 @@
                         <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Home</a>
+                                    <a class="nav-link" href="./index.html">Home</span></a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./about.html"> About us</a>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="./about.html"> About us </a>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="./contact.html"> Contact Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <div class="search-container" style="margin-top: 3px; margin-left:30px">
-                                        <form action="#">
+                                        <form id="searchForm">
                                             <input type="text" placeholder="Enter a destination or keyword"
-                                                style="font-style: italic;" name="search">
-                                            <button class="bg-success" type="submit"><img
-                                                    src="./assets/icons8-search-16.png"></button>
+                                                style="font-style: italic;" name="search" id="searchInput">
+                                            <button class="bg-success" type="submit" id="searchButton">
+                                                <img src="./assets/icons/icons8-search-16.png">
+                                            </button>
                                         </form>
                                     </div>
                                 </li>
@@ -75,7 +76,7 @@
                         Contact Us
                     </h2>
                 </div>
-                <h1>Reach Out and Let the Journey Begin</h1>
+                <h1><span class="highlight">Reach Out</span> and Let the Journey Begin</h1>
                 <p>Embark on a voyage of discovery with OdysseyOrbit. Whether you’re dreaming of distant
                     sands or cityscapes, our team is ready to turn your travel aspirations into reality.
                     We're here to guide you through every step of your travel planning process. Contact
@@ -84,27 +85,26 @@
                     <div class="row">
                         <div class="col-md-6 px-0">
                             <div class="img-box">
-                                <img src="./assets/contact.jpg" alt="">
+                                <img src="./assets/images/contact.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
-                                <form action="">
+                                <form action="" id="contactForm">
                                     <div>
-                                        <input type="text" placeholder="Name" />
-                                    </div>
-                                    <div>
-                                        <input type="email" placeholder="email@example.com" />
+                                        <input type="text" name="name" placeholder="Name" required />
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Phone Number" />
+                                        <input type="email" name="email" placeholder="email@example.com" required />
                                     </div>
                                     <div>
-                                        <input type="text" class="message-box" placeholder="Message" />
+                                        <input type="text" name="phone" placeholder="Phone Number" />
                                     </div>
-                                    <div class="d-flex">
-                                        <a class="btn from-bottom" href="#">Send</a>
-                                    </div>
+                                    <div>
+                                        <input class="message-box" name="message" placeholder="Message" required />
+                                        <div class="d-flex">
+                                            <button type="submit" class="btn from-bottom">Send</button>
+                                        </div>
                                 </form>
                             </div>
                         </div>
@@ -113,6 +113,14 @@
             </div>
         </section>
         <!-- end contact section -->
+
+        <!-- Modal Structure -->
+        <div id="searchModal" class="search-modal">
+            <div class="search-modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="searchResults" class="results"></div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer-section" id="footer">
@@ -120,8 +128,8 @@
             <div class="row gy-4 gx-5">
                 <div class="col-lg-4 col-md-6">
                     <div class="logo-box">
-                        <div class="logo"><a href="./index.html"><img src="./assets/logo_large.png" alt="" title=""></a>
-                        </div>
+                        <div class="logo"><a href="./index.html"><img src="./assets/icons/logo_large.png" alt=""
+                                    title=""></a></div>
                     </div>
                     <p class="small text-white mb-0">&copy; Copyrights. All rights reserved.</p>
                 </div>
@@ -136,9 +144,9 @@
                 <div class="col-lg-2 col-md-6 footer-links">
                     <h5>Follow Us On</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#"><img src="./assets/icons8-facebook-20.png"> Facebook</a></li>
-                        <li><a href="#"><img src="./assets/icons8-instagram-20.png"> Instagram</a></li>
-                        <li><a href="#"><img src="./assets/icons8-twitterx-20.png"> X</a></li>
+                        <li><a href="#"><img src="./assets/icons/icons8-facebook-20.png"> Facebook</a></li>
+                        <li><a href="#"><img src="./assets/icons/icons8-instagram-20.png"> Instagram</a></li>
+                        <li><a href="#"><img src="./assets/icons/icons8-twitterx-20.png"> X</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -163,8 +171,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
     <script src="js/stickyMenu.js"></script>
-    <script src="js/textScrollingAnimation.js"></script>
-    <script src="js/sectionActive.js"></script>
+    <script src="js/queryFetch.js"></script>
+    <script src="js/submitForm.js"></script>
 
 </body>
 

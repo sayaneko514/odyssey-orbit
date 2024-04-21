@@ -18,7 +18,7 @@
   <link href="css/responsive.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="icon" href="assets/logo.png" type="image/x-icon">
+  <link rel="icon" href="assets/icons/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css">
@@ -29,7 +29,7 @@
     <header class="header_section">
       <div class="container-fluid">
         <div class="logo-box">
-          <div class="logo"><a href="./index.html"><img src="./assets/logo.png" alt="" title=""></a>
+          <div class="logo"><a href="./index.html"><img src="./assets/icons/logo.png" alt="" title=""></a>
           </div>
         </div>
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -40,8 +40,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="./index.html">Home</span></a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home</span></a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="./about.html"> About us </a>
@@ -50,11 +50,17 @@
                 </li>
                 <li class="nav-item">
                   <div class="search-container" style="margin-top: 3px; margin-left:30px">
-                    <form action="#">
+                    <form id="searchForm">
                       <input type="text" placeholder="Enter a destination or keyword" style="font-style: italic;"
-                        name="search">
-                      <button class="bg-success" type="submit"><img src="./assets/icons8-search-16.png"></button>
+                        name="search" id="searchInput">
+                      <button class="bg-success" type="submit" id="searchButton">
+                        <img src="./assets/icons/icons8-search-16.png">
+                      </button>
+                      <button type="button" id="resetButton" style="display: none;">
+                        <img src="./assets/icons/icons8-refresh-16.png">
+                      </button>
                     </form>
+
                   </div>
                 </li>
               </ul>
@@ -75,9 +81,11 @@
                 <div class="col-lg-10 col-md-11 mx-auto">
                   <div class="detail-box">
                     <div>
-                      <h2>Odyssey ORBIT</h2>
+                      <div class="heading_container">
+                        <h2>Odyssey ORBIT</h2>
+                      </div>
                       <h1>
-                        Crafting Journeys, Orbiting Dreams.
+                        Crafting Journeys, Orbiting <span class="highlight">DREAMS.</span>
                       </h1>
                       <p>
                         We are making unique travel experiences that bring your dream destinations within reach and send
@@ -98,10 +106,10 @@
                 <div class="col-lg-10 col-md-11 mx-auto">
                   <div class="detail-box">
                     <div>
-                      <h2>
-                        Odyssey ORBIT
-                      </h2>
-                      <h1>Beyond Borders, Within Reach.</h1>
+                      <div class="heading_container">
+                        <h2>Odyssey ORBIT</h2>
+                      </div>
+                      <h1>Beyond Borders, Within <span class="highlight">Reach.</span></h1>
                       <p>
                         We are dedicated to transcending the limitations of traditional travel, making even the
                         most distant of destinations accessible.
@@ -121,6 +129,14 @@
       </div>
     </section>
     <!-- end slider section -->
+
+    <!-- Modal Structure -->
+    <div id="searchModal" class="search-modal">
+      <div class="search-modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="searchResults" class="results"></div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer-section" id="footer">
@@ -128,7 +144,7 @@
       <div class="row gy-4 gx-5">
         <div class="col-lg-4 col-md-6">
           <div class="logo-box">
-            <div class="logo"><a href="./index.html"><img src="./assets/logo_large.png" alt="" title=""></a></div>
+            <div class="logo"><a href="./index.html"><img src="./assets/icons/logo_large.png" alt="" title=""></a></div>
           </div>
           <p class="small text-white mb-0">&copy; Copyrights. All rights reserved.</p>
         </div>
@@ -143,9 +159,9 @@
         <div class="col-lg-2 col-md-6 footer-links">
           <h5>Follow Us On</h5>
           <ul class="list-unstyled">
-            <li><a href="#"><img src="./assets/icons8-facebook-20.png"> Facebook</a></li>
-            <li><a href="#"><img src="./assets/icons8-instagram-20.png"> Instagram</a></li>
-            <li><a href="#"><img src="./assets/icons8-twitterx-20.png"> X</a></li>
+            <li><a href="#"><img src="./assets/icons/icons8-facebook-20.png"> Facebook</a></li>
+            <li><a href="#"><img src="./assets/icons/icons8-instagram-20.png"> Instagram</a></li>
+            <li><a href="#"><img src="./assets/icons/icons8-twitterx-20.png"> X</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6">
@@ -169,8 +185,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
   <script src="js/stickyMenu.js"></script>
-  <script src="js/textScrollingAnimation.js"></script>
-  <script src="js/sectionActive.js"></script>
+  <script src="js/queryFetch.js"></script>
+  <script src="js/resetTextField.js"></script>
 
 </body>
 
